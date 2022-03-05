@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pizzas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textColor="#666"
+            android:textSize="28dp" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#673AB7">
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Pizzas"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="Agregar"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:padding="3dip"
+                    android:text="Quitar"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="Cant"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="Precio"
+                    android:textColor="@android:color/white" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Pastor" />
+
+                <ImageView
+                    android:id="@+id/button1Add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="2"
+                    android:clickable="true"
+                    android:onClick="clickAdd"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/button1Remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="3"
+                    android:clickable="true"
+                    android:onClick="clickRemove"
+                    android:src="@drawable/remove" />
+
+                <TextView
+                    android:id="@+id/total1"
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="250"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Hawaiana" />
+
+                <ImageView
+                    android:id="@+id/button2Add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="2"
+                    android:clickable="true"
+                    android:onClick="clickAdd"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/button2Remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="3"
+                    android:clickable="true"
+                    android:onClick="clickRemove"
+                    android:src="@drawable/remove" />
+
+                <TextView
+                    android:id="@+id/total2"
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="220"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Pepperoni" />
+
+                <ImageView
+                    android:id="@+id/button3Add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="2"
+                    android:clickable="true"
+                    android:onClick="clickAdd"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/button3Remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="3"
+                    android:clickable="true"
+                    android:onClick="clickRemove"
+                    android:src="@drawable/remove" />
+
+                <TextView
+                    android:id="@+id/total3"
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/price3"
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="210"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow android:background="#673AB7">
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Bebidas"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Coca Cola" />
+
+                <ImageView
+                    android:id="@+id/button4Add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="2"
+                    android:clickable="true"
+                    android:onClick="clickAdd"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/button4Remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="3"
+                    android:clickable="true"
+                    android:onClick="clickRemove"
+                    android:src="@drawable/remove" />
+
+                <TextView
+                    android:id="@+id/total4"
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/price4"
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="40"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Fanta" />
+
+                <ImageView
+                    android:id="@+id/button5Add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="2"
+                    android:clickable="true"
+                    android:onClick="clickAdd"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/button5Remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_column="3"
+                    android:clickable="true"
+                    android:onClick="clickRemove"
+                    android:src="@drawable/remove" />
+
+                <TextView
+                    android:id="@+id/total5"
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/price5"
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="40"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow android:background="#673AB7">
+
+                <TextView
+                    android:layout_column="4"
+                    android:padding="3dip"
+                    android:text="Total"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_column="5"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/buttonFinish"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:text="Finalizar pedido"/>
+    </LinearLayout>
+</RelativeLayout>
