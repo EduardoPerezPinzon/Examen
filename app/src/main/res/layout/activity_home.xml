@@ -27,22 +27,13 @@
 
         <ImageView
             android:id="@+id/buttonPizza"
-            android:src="@drawable/pizzas"
+            android:src="@drawable/pizzabebida1"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="300dp"
             android:clickable="true"
-            android:layout_marginTop="100dp"
-            android:onClick="clickPizza" />
+            android:layout_marginTop="100dp"/>
+            //android:onClick="clickPizza" />
 
-        <ImageView
-            android:id="@+id/buttonDrinks"
-            android:src="@drawable/bebidas"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            android:clickable="true"
-            android:padding="1dp"
-            android:onClick="clickDrinks" />
     </LinearLayout>
 
 </RelativeLayout>

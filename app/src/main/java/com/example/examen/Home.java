@@ -23,7 +23,7 @@ public class Home extends AppCompatActivity {
         buttonPizza = (ImageView)findViewById(R.id.buttonPizza);
 
         String username = getIntent().getStringExtra("USERNAME");
-        String message = "Hola estimado " + username + " ¿Qué te podemos llevar hasta tu casa este día?. Por favor selecciona:";
+        String message = "Hola estimado " + username + " ¿Qué te podemos llevar hasta tu casa este día?. Por favor Ingresa al Menu en la Imagen:";
         welcome.setText(message);
 
         buttonPizza.setOnClickListener(new View.OnClickListener() {
