@@ -243,7 +243,7 @@ public class Pizzas extends AppCompatActivity {
 
                 Intent intent = new Intent(Pizzas.this, End.class);
                 intent.putExtra("PIZZAS", TextUtils.join(", ", selectedPizzas));
-                intent.putExtra("DRINKS", TextUtils.join(", ", selectedDrinks));
+                intent.putExtra("DRINKS", TextUtils.join(",", selectedDrinks));
                 intent.putExtra("TOTAL", total.getText().toString());
                 intent.putExtra("USERNAME", username);
                 startActivity(intent);

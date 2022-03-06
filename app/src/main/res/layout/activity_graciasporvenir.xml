@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
-    android:background="@drawable/fondopizza"
-    >
+    tools:context=".Graciasporvenir"
+    android:background="@drawable/fondopizza">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,26 +15,26 @@
         android:orientation="vertical"
         android:layout_margin="30dp">
 
+
         <TextView
-            android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#666"
+            android:text="¡GRACIS POR VENIR A TU PÍZZA FAVORITA, REGRESA PRONTO!"
+            android:textColor="#000000"
             android:textSize="28dp"
             android:textAlignment="center"
             android:fontFamily="sans-serif-black"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp" />
 
-        <ImageView
-            android:id="@+id/buttonPizza"
-            android:src="@drawable/menupizza"
+        <Button
+            android:id="@+id/salirapp"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:clickable="true"
-            android:layout_marginTop="100dp"/>
-            //android:onClick="clickPizza" />
+            android:layout_height="60dp"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:text="SALIR APP"/>
+
 
     </LinearLayout>
 
